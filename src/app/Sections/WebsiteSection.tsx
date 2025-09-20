@@ -75,7 +75,7 @@ const WebsiteSection: React.FC = () => {
         </p>
       </div>
 
-      <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4">
+      <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4 2xl:max-w-7xl 2xl:mx-auto">
         {websites.map((item, index) => (
           <div
             key={index}
