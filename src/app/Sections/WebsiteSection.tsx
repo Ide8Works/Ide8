@@ -68,7 +68,7 @@ const WebsiteSection: React.FC = () => {
         <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-aglight font-bold">
           Websites
         </h2>
-        <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-10 font-aglight">
+        <p className="text-sm md:text-base lg:text-lg text-[#020202] mb-10 font-courier">
           Landing pages, portfolios, ecommerce, dashboards —
           <br className="hidden sm:block" />
           designed to impress and built to perform.

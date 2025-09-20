@@ -12,7 +12,7 @@ const BrandingSection: React.FC = () => {
         <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
           Branding <span className="font-aglight">and</span> UI/UX
         </h2>
-        <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-10 font-aglight">
+        <p className="text-sm md:text-base lg:text-lg text-white mb-10 font-courier">
           From just a logo to a complete identity — fonts,
           <br className="hidden sm:block" />
           colors, voice, and everything in between.
