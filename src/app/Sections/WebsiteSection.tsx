@@ -75,7 +75,12 @@ const WebsiteSection: React.FC = () => {
         </p>
       </div>
 
-      <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4 2xl:max-w-7xl 2xl:mx-auto">
+      <Marquee
+        pauseOnHover={true}
+        speed={40}
+        gradient={false}
+        className="py-4 2xl:max-w-7xl 2xl:mx-auto"
+      >
         {websites.map((item, index) => (
           <div
             key={index}
@@ -87,9 +92,9 @@ const WebsiteSection: React.FC = () => {
               className="w-full h-full object-cover rounded-xl"
             />
 
-            <div className="absolute flex items-center justify-between mx-5 px-6 py-2 border-1 border-white/55 bg-black/8 backdrop-blur-xl rounded-full bottom-4 left-0 right-0 transform translate-y-30 group-hover:translate-y-0 transition-transform duration-400 ease-out">
+            <div className="absolute flex items-center justify-between mx-5 px-6 py-2 border-1 border-white/55 bg-black/8 backdrop-blur-xl rounded-full bottom-4 left-0 right-0 md:translate-y-30 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-400 ease-out">
               <div className="text-white text-left">
-                <h3 className="text-lg font-semibold font-agheavy">
+                <h3 className="text-sm md:text-lg font-semibold font-agheavy">
                   {item?.name}
                 </h3>
               </div>
@@ -99,7 +104,7 @@ const WebsiteSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="bg-white text-black rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:shadow-md font-aglight"
               >
-                View Details
+                <span className="hidden md:block">View Details</span>
                 <ArrowUpRight className="w-5 h-5" />
               </a>
             </div>
