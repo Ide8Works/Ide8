@@ -6,12 +6,14 @@ import WebsiteSection from "./Sections/WebsiteSection";
 import WhatWeBuildSection from "./Sections/WhatWeBuildSection";
 import WhyWorkWithUsSection from "./Sections/WhyWorkWithUsSection";
 import SocialMediaSection from "./Sections/SocialMediaSection";
+import LegalSection from "./Sections/LegalSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <TransitionSection />
+      <LegalSection/>
       <WhatWeBuildSection />
       <WebsiteSection />
       <BrandingSection />
