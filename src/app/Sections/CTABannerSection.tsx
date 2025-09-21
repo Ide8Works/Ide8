@@ -18,11 +18,11 @@ const CTABannerSection = () => {
           />
         </div>
         <div className="flex flex-col gap-1 sm:gap-2 w-full items-center px-4 sm:px-8">
-          <h1 className="font-aglight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-1/2 text-center text-white leading-tight">
+          <h1 className="font-aglight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl w-full sm:w-5/6 md:w-4/5 lg:w-3/4 xl:w-1/2 text-center text-white leading-tight tracking-tight">
             Dont <span className="font-agheavy">end up</span> with the idea in
             mind
           </h1>
-          <h2 className="font-courier text-white text-sm sm:text-base md:text-lg text-center px-2">
+          <h2 className="font-courier text-white text-sm sm:text-base md:text-lg text-center px-2 tracking-tight leading-tight">
             <span className="italic">If you scrolled this far,</span> It&lsquo;s
             time to START OFF!
           </h2>

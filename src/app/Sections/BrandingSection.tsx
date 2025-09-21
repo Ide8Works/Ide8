@@ -9,10 +9,10 @@ const BrandingSection: React.FC = () => {
   return (
     <section className="w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight leading-tight">
           Branding <span className="font-aglight">and</span> UI/UX
         </h2>
-        <p className="text-sm md:text-base lg:text-lg text-white mb-10 font-courier">
+        <p className="text-sm md:text-base lg:text-lg text-white mb-10 font-courier tracking-tight leading-tight">
           From just a logo to a complete identity — fonts,
           <br className="hidden sm:block" />
           colors, voice, and everything in between.

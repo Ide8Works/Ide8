@@ -65,10 +65,10 @@ const WebsiteSection: React.FC = () => {
   return (
     <section className="w-full bg-white py-8 md:py-10 lg:py-12 h-screen 2xl:h-auto flex flex-col items-center justify-start">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight">
           Websites
         </h2>
-        <p className="text-sm md:text-base lg:text-lg text-[#020202] mb-10 font-courier">
+        <p className="text-sm md:text-base lg:text-lg text-[#020202] mb-10 font-courier tracking-tight leading-tight">
           Landing pages, portfolios, ecommerce, dashboards —
           <br className="hidden sm:block" />
           designed to impress and built to perform.
