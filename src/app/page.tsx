@@ -5,6 +5,7 @@ import TransitionSection from "./Sections/LetsBuildSection";
 import WebsiteSection from "./Sections/WebsiteSection";
 import WhatWeBuildSection from "./Sections/WhatWeBuildSection";
 import WhyWorkWithUsSection from "./Sections/WhyWorkWithUsSection";
+import SocialMediaSection from "./Sections/SocialMediaSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WhatWeBuildSection />
       <WebsiteSection />
       <BrandingSection />
+      <SocialMediaSection />
       <WhyWorkWithUsSection />
       <StepsSection />
     </>
