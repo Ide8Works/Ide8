@@ -3,14 +3,16 @@ import HeroSection from "./Sections/HeroSection";
 import StepsSection from "./Sections/StepsSection";
 import TransitionSection from "./Sections/LetsBuildSection";
 import WebsiteSection from "./Sections/WebsiteSection";
+import WhatWeBuildSection from "./Sections/WhatWeBuildSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <TransitionSection />
+      <WhatWeBuildSection/>
       <WebsiteSection />
       <BrandingSection/>
-      <TransitionSection />
       <StepsSection/>
     </>
   );
