@@ -63,9 +63,9 @@ const WebsiteSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+    <section className="w-full bg-white py-8 md:py-10 lg:py-12 h-screen flex flex-col items-center justify-center">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-aglight font-bold">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
           Websites
         </h2>
         <p className="text-sm md:text-base lg:text-lg text-[#020202] mb-10 font-courier">

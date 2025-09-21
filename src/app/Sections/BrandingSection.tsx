@@ -7,7 +7,7 @@ const BrandingSection: React.FC = () => {
   const cards = Array(6).fill(null);
 
   return (
-    <section className="w-full bg-[#ffa800] py-8 md:py-10 lg:py-12">
+    <section className="w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 h-screen flex flex-col items-center justify-center">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
           Branding <span className="font-aglight">and</span> UI/UX
