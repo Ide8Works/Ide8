@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -53,7 +51,6 @@ const StepsCard = ({
         }}
         className="relative flex flex-col md:flex-row h-auto md:h-[420px] lg:h-[470px] w-full origin-top overflow-hidden rounded-xl bg-[#ffa800] border-2 border-white shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 gap-4"
       >
-        
         <div className="w-full md:w-[40%] h-40 md:h-auto bg-white  rounded-xl flex items-center justify-center">
           <img
             src={project.image}
@@ -110,9 +107,12 @@ const StepsSection: React.FC = () => {
       ref={container}
       className="relative flex w-full flex-col items-center justify-center mb-[15vh] mt-[5vh md:mb-[15vh] 2xl:mb-[4vh] py-8 md:py-12 2xl:max-w-7xl 2xl:mx-auto"
     >
-      <h2 className="sticky text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight">
+      <h2 className="sticky text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight tracking-tight leading-tight">
         All it takes are{" "}
-        <span className="font-agheavy"> <br className="block md:hidden" />3 Steps</span>
+        <span className="font-agheavy">
+          {" "}
+          <br className="block md:hidden" />3 Steps
+        </span>
       </h2>
 
       {projects.map((project, i) => {
