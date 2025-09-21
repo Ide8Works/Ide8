@@ -8,20 +8,22 @@ import WhyWorkWithUsSection from "./Sections/WhyWorkWithUsSection";
 import SocialMediaSection from "./Sections/SocialMediaSection";
 import LegalSection from "./Sections/LegalSection";
 import CTABannerSection from "./Sections/CTABannerSection";
+import TestimonialSection from "./Sections/TestimonialSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <LetsBuildSection />
-      <LegalSection/>
+      <LegalSection />
       <WhatWeBuildSection />
       <WebsiteSection />
       <BrandingSection />
       <SocialMediaSection />
       <WhyWorkWithUsSection />
-      <CTABannerSection/>
       <StepsSection />
+      <TestimonialSection/>
+      <CTABannerSection />
     </>
   );
 }
