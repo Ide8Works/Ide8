@@ -6,24 +6,31 @@ import React, { useRef } from "react";
 interface Project {
   name: string;
   image: string;
+  subheading: string;
   description: string;
 }
 
 const projects: Project[] = [
   {
-    name: "Connect",
-    image: "/media/steps.png",
-    description: "Because good work isn’t just about design",
+    name: "Contact",
+    image: "/media/memes/TomCall.png",
+    subheading: "Drop us a brief.",
+    description:
+      "Share your goals, problems, or even half-formed ideas. Don’t worry about perfection—we’ll dig deep, uncover clarity, and transform scattered thoughts into a solid starting point for something impactful.",
   },
   {
-    name: "Discussions",
-    image: "/media/steps.png",
-    description: "Because good work isn’t just about design",
+    name: "Collaborate",
+    image: "/media/memes/WelcomeToGroup.png",
+    subheading: "Share ideas, feedback, vision.",
+    description:
+      "This is where we co-create. We’ll brainstorm together, refine directions, and build on your feedback until concepts align perfectly with your vision, ensuring the outcome feels authentic, exciting, and undeniably yours.",
   },
   {
-    name: "Let us Cook",
-    image: "/media/steps.png",
-    description: "Because good work isn’t just about design",
+    name: "Cook",
+    image: "/media/memes/CapybaraCook.png",
+    subheading: "Sit back, let us deliver.",
+    description:
+      "With everything aligned, we take charge of execution. From design details to polished delivery, we craft work built to launch strong, captivate audiences, and deliver results that last.",
   },
 ];
 
@@ -51,16 +58,16 @@ const StepsCard = ({
         }}
         className="relative flex flex-col md:flex-row h-auto md:h-[420px] lg:h-[470px] w-full origin-top overflow-hidden rounded-xl bg-[#ffa800] border-2 border-white shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 gap-4"
       >
-        <div className="w-full md:w-[40%] h-40 md:h-auto bg-white  rounded-xl flex items-center justify-center">
+        <div className="w-full md:w-[40%] h-40 md:h-auto bg-white rounded-xl flex items-center justify-center p-6">
           <img
             src={project.image}
             alt={project.name}
-            className="object-cover h-full w-full py-5 rounded-xl"
+            className="object-cover h-full w-full rounded-lg shadow-lg"
           />
         </div>
 
         <div className="flex-1 w-full flex flex-col gap-4 md:gap-6 md:ml-2">
-          <div className="bg-white p-4 sm:p-6 rounded-xl h-full">
+          <div className="bg-white p-4 sm:p-6 rounded-xl h-full flex flex-col justify-center sm:gap-1">
             <p className="font-aglight text-base sm:text-lg md:text-2xl lg:text-3xl">
               Step 0
               <span className="font-agheavy text-lg sm:text-xl md:text-2xl lg:text-3xl ml-1">
@@ -70,22 +77,10 @@ const StepsCard = ({
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold font-agheavy mt-2">
               {project.name}
             </h1>
-            <p className="text-xs sm:text-sm md:text-base text-justify font-courier mt-2">
-              {project.description}
-            </p>
-          </div>
-
-          <div className="bg-white p-4 sm:p-6 rounded-xl h-full">
-            <p className="font-aglight text-base sm:text-lg md:text-2xl lg:text-3xl">
-              Step 0
-              <span className="font-agheavy text-lg sm:text-xl md:text-2xl lg:text-3xl ml-1">
-                {i + 1}
-              </span>
-            </p>
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold font-agheavy mt-2">
-              {project.name}
-            </h1>
-            <p className="text-xs sm:text-sm md:text-base text-justify font-courier mt-2">
+            <h2 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-aglight mt-2">
+              {project.subheading}
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-justify font-courier mt-2 pr-4">
               {project.description}
             </p>
           </div>

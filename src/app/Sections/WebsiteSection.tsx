@@ -69,7 +69,10 @@ const WebsiteSection: React.FC = () => {
           Websites
         </h2>
         <p className="text-sm md:text-base lg:text-lg text-[#020202] mb-10 font-courier tracking-tight leading-tight">
-          Landing pages, portfolios, ecommerce, dashboards —
+          <span className="italic">
+            Landing pages, portfolios, ecommerce, dashboards
+          </span>{" "}
+          —
           <br className="hidden sm:block" />
           designed to impress and built to perform.
         </p>
