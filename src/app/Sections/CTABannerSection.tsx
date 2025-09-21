@@ -1,4 +1,3 @@
-import Marquee from "react-fast-marquee";
 import GlowingButton from "../Components/GlowingButton";
 import Particles from "../Components/Particles";
 
@@ -24,8 +23,8 @@ const CTABannerSection = () => {
             mind
           </h1>
           <h2 className="font-courier text-white">
-            <span className="italic">If you scrolled this far,</span> It's time
-            to START OFF!
+            <span className="italic">If you scrolled this far,</span> It&lsquo;s
+            time to START OFF!
           </h2>
         </div>
         <div className="flex items-center justify-center gap-6 font-courier mt-4">
