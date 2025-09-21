@@ -5,6 +5,8 @@ import TransitionSection from "./Sections/LetsBuildSection";
 import WebsiteSection from "./Sections/WebsiteSection";
 import WhatWeBuildSection from "./Sections/WhatWeBuildSection";
 import WhyWorkWithUsSection from "./Sections/WhyWorkWithUsSection";
+import SocialMediaSection from "./Sections/SocialMediaSection";
+import LegalSection from "./Sections/LegalSection";
 import CTABannerSection from "./Sections/CTABannerSection";
 
 export default function Home() {
@@ -12,9 +14,11 @@ export default function Home() {
     <>
       <HeroSection />
       <TransitionSection />
+      <LegalSection/>
       <WhatWeBuildSection />
       <WebsiteSection />
       <BrandingSection />
+      <SocialMediaSection />
       <WhyWorkWithUsSection />
       <CTABannerSection/>
       <StepsSection />

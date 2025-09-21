@@ -108,11 +108,11 @@ const StepsSection: React.FC = () => {
   return (
     <main
       ref={container}
-      className="relative flex w-full flex-col items-center justify-center my-[5vh] py-8 md:py-12 2xl:max-w-7xl 2xl:mx-auto"
+      className="relative flex w-full flex-col items-center justify-center mb-[15vh] mt-[5vh md:mb-[15vh] 2xl:mb-[4vh] py-8 md:py-12 2xl:max-w-7xl 2xl:mx-auto"
     >
-      <h2 className="sticky text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight">
+      <h2 className="sticky text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight">
         All it takes are{" "}
-        <span className="font-agheavy">3 Steps</span>
+        <span className="font-agheavy"> <br className="block md:hidden" />3 Steps</span>
       </h2>
 
       {projects.map((project, i) => {

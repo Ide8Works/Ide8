@@ -7,9 +7,9 @@ const BrandingSection: React.FC = () => {
   const cards = Array(6).fill(null);
 
   return (
-    <section className="w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 h-screen flex flex-col items-center justify-center">
+    <section className="w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
           Branding <span className="font-aglight">and</span> UI/UX
         </h2>
         <p className="text-sm md:text-base lg:text-lg text-white mb-10 font-courier">
@@ -28,7 +28,7 @@ const BrandingSection: React.FC = () => {
         {cards.map((item, index) => (
           <div
             key={index}
-            className="relative flex-shrink-0 w-72 sm:w-80 md:w-[380px] lg:w-[470px] h-56 sm:h-64 md:h-72 lg:h-80 mx-3 sm:mx-4 bg-white/65 rounded-xl group cursor-pointer overflow-hidden"
+            className="relative flex-shrink-0 w-80 sm:w-80 md:w-[380px] lg:w-[470px] h-96 sm:h-64 md:h-72 lg:h-80 mx-3 sm:mx-4 bg-orange-200 rounded-xl group cursor-pointer overflow-hidden"
           >
             <img
               src={item?.image}

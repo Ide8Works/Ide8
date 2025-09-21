@@ -63,9 +63,9 @@ const WebsiteSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-8 md:py-10 lg:py-12 h-screen flex flex-col items-center justify-center">
+    <section className="w-full bg-white py-8 md:py-10 lg:py-12 h-screen 2xl:h-auto flex flex-col items-center justify-start">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold">
           Websites
         </h2>
         <p className="text-sm md:text-base lg:text-lg text-[#020202] mb-10 font-courier">
@@ -79,12 +79,12 @@ const WebsiteSection: React.FC = () => {
         pauseOnHover={true}
         speed={40}
         gradient={false}
-        className="py-4 2xl:max-w-7xl 2xl:mx-auto"
+        className=" mt-7 md:mt-0 py-4 2xl:max-w-7xl 2xl:mx-auto"
       >
         {websites.map((item, index) => (
           <div
             key={index}
-            className="relative flex-shrink-0 w-72 sm:w-80 md:w-[380px] lg:w-[470px] h-56 sm:h-64 md:h-72 lg:h-80 mx-3 sm:mx-4 bg-orange-200 rounded-xl group cursor-pointer overflow-hidden"
+            className="relative flex-shrink-0 w-80 sm:w-80 md:w-[380px] lg:w-[470px] h-96 sm:h-64 md:h-72 lg:h-80 mx-3 sm:mx-4 bg-orange-200 rounded-xl group cursor-pointer overflow-hidden"
           >
             <img
               src={item?.image}
