@@ -51,19 +51,19 @@ const StepsCard = ({
           scale,
           top: `calc(-1vh + ${i * 80}px)`,
         }}
-        className="relative flex flex-col md:flex-row h-auto md:h-[420px] lg:h-[470px] w-full origin-top overflow-hidden rounded-2xl bg-[#ffa800] border-2 border-white shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 gap-4"
+        className="relative flex flex-col md:flex-row h-auto md:h-[420px] lg:h-[470px] w-full origin-top overflow-hidden rounded-xl bg-[#ffa800] border-2 border-white shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 gap-4"
       >
         
-        <div className="w-full md:w-[40%] h-40 md:h-auto bg-white  rounded-2xl flex items-center justify-center">
+        <div className="w-full md:w-[40%] h-40 md:h-auto bg-white  rounded-xl flex items-center justify-center">
           <img
             src={project.image}
             alt={project.name}
-            className="object-cover h-full w-full py-5 rounded-2xl"
+            className="object-cover h-full w-full py-5 rounded-xl"
           />
         </div>
 
-        <div className="flex-1 w-full flex flex-col gap-4 md:gap-6 md:ml-5">
-          <div className="bg-white p-4 sm:p-5 rounded-2xl h-fit">
+        <div className="flex-1 w-full flex flex-col gap-4 md:gap-6 md:ml-2">
+          <div className="bg-white p-4 sm:p-6 rounded-xl h-full">
             <p className="font-aglight text-base sm:text-lg md:text-2xl lg:text-3xl">
               Step 0
               <span className="font-agheavy text-lg sm:text-xl md:text-2xl lg:text-3xl ml-1">
@@ -78,7 +78,7 @@ const StepsCard = ({
             </p>
           </div>
 
-          <div className="bg-white p-4 sm:p-5 rounded-2xl h-full">
+          <div className="bg-white p-4 sm:p-6 rounded-xl h-full">
             <p className="font-aglight text-base sm:text-lg md:text-2xl lg:text-3xl">
               Step 0
               <span className="font-agheavy text-lg sm:text-xl md:text-2xl lg:text-3xl ml-1">
@@ -110,7 +110,7 @@ const StepsSection: React.FC = () => {
       ref={container}
       className="relative flex w-full flex-col items-center justify-center my-[5vh] py-8 md:py-12 2xl:max-w-7xl 2xl:mx-auto"
     >
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight">
+      <h2 className="sticky text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight">
         All it takes are{" "}
         <span className="font-agheavy">3 Steps</span>
       </h2>
