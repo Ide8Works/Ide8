@@ -3,7 +3,7 @@ import Particles from "../Components/Particles";
 
 const CTABannerSection = () => {
   return (
-    <div className="w-screen flex items-center justify-center p-4 sm:p-8 lg:p-12 xl:p-20">
+    <div className="w-screen flex items-center justify-center p-4 sm:p-8 lg:p-12 xl:p-10">
       <div className="bg-black flex flex-col gap-4 sm:gap-6 items-center w-full h-full rounded-xl py-16 sm:py-24 md:py-32 lg:py-40 drop-shadow-xl relative overflow-hidden">
         <div className="h-full w-full absolute top-0 left-0 -z-10 opacity-50">
           <Particles
