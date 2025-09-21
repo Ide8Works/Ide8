@@ -1,7 +1,7 @@
 import BrandingSection from "./Sections/BrandingSection";
 import HeroSection from "./Sections/HeroSection";
 import StepsSection from "./Sections/StepsSection";
-import TransitionSection from "./Sections/TransitionSection";
+import TransitionSection from "./Sections/LetsBuildSection";
 import WebsiteSection from "./Sections/WebsiteSection";
 
 export default function Home() {
@@ -10,8 +10,8 @@ export default function Home() {
       <HeroSection />
       <WebsiteSection />
       <BrandingSection/>
-      <StepsSection/>
       <TransitionSection />
+      <StepsSection/>
     </>
   );
 }
