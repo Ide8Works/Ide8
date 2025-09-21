@@ -29,7 +29,7 @@ const WhyWorkWithUsSection = () => {
           why work <span className="font-agheavy text-[#ffa800]">with us</span>
         </h1>
         <h2 className="font-courier text-sm sm:text-base md:text-lg text-center leading-tight w-full sm:w-5/6 md:w-4/5 lg:w-2/3 px-4 tracking-tight">
-          Because good work isn't just about design — it's about{" "}
+          Because good work isn&lsquo;t just about design — it&lsquo;s about{" "}
           <span className="italic">trust</span>,{" "}
           <span className="italic">delivery</span>, and{" "}
           <span className="italic">results</span>.
