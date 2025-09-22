@@ -18,10 +18,10 @@ const GlowingButton = ({
   return (
     <button
       {...props}
-      className={`bg-[#ffa800] text-white font-medium rounded-full 
+      className={`cursor-pointer bg-[#ffa800] text-white font-medium rounded-full 
                  px-4 py-2 sm:px-6 sm:py-2 md:px-8 md:py-2 lg:px-10 lg:py-2 xl:px-12 xl:py-2
                  text-sm sm:text-base md:text-base lg:text-base
-                 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 
+                  transition-all duration-300 ease-in-out hover:scale-105 
                  relative overflow-hidden sm:w-auto min-w-[120px] sm:min-w-[140px]
                  ${className}`}
       style={{
