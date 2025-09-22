@@ -1,36 +1,57 @@
 "use client";
-import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
-import React, { useEffect, useRef } from "react";
+import React, {  useRef } from "react";
 import Marquee from "react-fast-marquee";
 
-const BrandingSection: React.FC = () => {
-  const cards = Array(6).fill(null);
-       const sectionRef = useRef<HTMLDivElement>(null);
-  
 
-      useEffect(() => {
-    if (sectionRef.current) {
-      gsap.to(
-        sectionRef.current,
-        {
-          width: "100%",
-          height: "100vh",
-          borderRadius: "0px",
-          ease: "power2.inOut",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            scrub: true,
-            pin: true,
-            pinSpacing: false,
-          },
-        }
-      );
-    }
-  }, []);
+const BrandingSection: React.FC = () => {
+  const cards = [
+    {
+      name: "Qubit",
+      link: "https://www.figma.com/design/63p3DqmHSMFK9Po8M08ZpF/Qubit_Design?m=auto&t=rji2apA1A0HfpKhq-1",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%209.57.28%E2%80%AFPM.png", 
+    },
+    {
+      name: "Agrictech",
+      link: "https://www.figma.com/design/YVEnFMZ7vS31gx541e6Xbw/Agrictech?m=auto&t=rji2apA1A0HfpKhq-1",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%2010.00.25%E2%80%AFPM.png",
+    },
+    {
+      name: "Chatkara",
+      link: "https://www.figma.com/design/xLrdHH1Fpr26rHi6nYhMGZ/Untitled?m=auto&t=rji2apA1A0HfpKhq-1",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%209.49.28%E2%80%AFPM.png",
+    },
+    {
+      name: "FindJobFast",
+      link: "https://www.figma.com/design/IwEWlpNs4LIcnJLa9yAIr1/FindJobFast?m=auto&t=rji2apA1A0HfpKhq-1",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%209.49.44%E2%80%AFPM.png",
+    },
+    {
+      name: "Restaurants",
+      link: "https://www.figma.com/design/o5x63T3jQDMTpn1Rq2WHGK/Dine-in-Restaurants?m=auto&t=rji2apA1A0HfpKhq-6",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%209.50.21%E2%80%AFPM.png",
+    },
+    {
+      name: "Flicksy",
+      link: "https://www.figma.com/design/q78Znr5dgw2HIs78mMTb4h/Flicksy?m=auto&t=rji2apA1A0HfpKhq-1",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%209.50.34%E2%80%AFPM.png",
+    },
+    {
+      name: "Khetify",
+      link: "https://www.figma.com/design/L0b1vyXCPplBiwBNjyqcDz/Khetify?m=auto&t=rji2apA1A0HfpKhq-1",
+      image: "https://ik.imagekit.io/mcit5snjx/IDE8/Screenshot%202025-09-22%20at%209.50.57%E2%80%AFPM.png",
+    },
+  ];
+
+  const sectionRef = useRef<HTMLDivElement>(null);
+
 
   return (
-    <section ref={sectionRef} className="relative z-30 w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center">
+    <section
+    id="brandings"
+      ref={sectionRef}
+      className=" w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center"
+    >
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight leading-tight">
           Branding <span className="font-aglight">and</span> UI/UX

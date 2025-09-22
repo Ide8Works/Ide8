@@ -16,7 +16,7 @@ const LegalSection = () => {
         sectionRef.current,
         {
           width: "70%",
-          height: "400px",
+          height: "200px",
           borderRadius: "70px",
         },
         {
@@ -38,7 +38,7 @@ const LegalSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="sticky top-0 bg-[#ffa800] flex flex-col items-center justify-center text-white text-2xl mx-auto mt-40 overflow-hidden"
+      className="sticky top-0 bg-[#ffa800] flex flex-col items-center justify-center text-white text-2xl mx-auto mt-16 overflow-hidden"
       style={{
         width: "40%",
         height: "200px",
