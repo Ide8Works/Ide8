@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const SocialMediaSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-8 md:py-10 lg:py-12 max-w-7xl mx-auto">
+    <section className="relative z-50 w-full bg-white py-8 md:py-10 lg:py-12 max-w-7xl mx-auto">
       <div className="px-4 py-10 text-center">
         <h2 className="mb-4 font-agheavy text-4xl md:text-4xl lg:text-5xl font-extrabold text-center tracking-tight">Social Media</h2>
         <p className="text-sm text-gray-700 max-w-xl mx-auto font-courier tracking-tight leading-tight">

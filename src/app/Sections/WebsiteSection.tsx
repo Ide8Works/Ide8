@@ -1,6 +1,7 @@
 "use client";
+import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 
 interface Website {
@@ -11,6 +12,8 @@ interface Website {
 }
 
 const WebsiteSection: React.FC = () => {
+     const sectionRef = useRef<HTMLDivElement>(null);
+   
   const websites: Website[] = [
     {
       name: "CAAS",
@@ -62,8 +65,28 @@ const WebsiteSection: React.FC = () => {
     },
   ];
 
+    useEffect(() => {
+    if (sectionRef.current) {
+      gsap.to(
+        sectionRef.current,
+        {
+          width: "100%",
+          height: "100vh",
+          borderRadius: "0px",
+          ease: "power2.inOut",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            scrub: true,
+            pin: true,
+            pinSpacing: false,
+          },
+        }
+      );
+    }
+  }, []);
+
   return (
-    <section className="w-full bg-white py-8 md:py-10 lg:py-12 h-screen 2xl:h-auto flex flex-col items-center justify-start">
+    <section ref={sectionRef} className="relative z-20 w-full bg-white py-8 md:py-10 lg:py-12 h-screen 2xl:h-auto flex flex-col items-center justify-start">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight">
           Websites

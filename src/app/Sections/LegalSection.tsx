@@ -26,9 +26,11 @@ const LegalSection = () => {
           ease: "power2.inOut",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top bottom",
-            end: "bottom center",
+            start: "top top",
+            end: "+=800",
             scrub: true,
+            pin: true,
+            pinSpacing: false,
           },
         }
       );
