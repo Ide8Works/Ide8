@@ -15,14 +15,14 @@ export default function Home() {
     <>
       <HeroSection />
       <LetsBuildSection />
-      <LegalSection />
       <WhatWeBuildSection />
+      <LegalSection />
       <WebsiteSection />
       <BrandingSection />
       <SocialMediaSection />
       <WhyWorkWithUsSection />
       <StepsSection />
-      <TestimonialSection/>
+      <TestimonialSection />
       <CTABannerSection />
     </>
   );

@@ -38,7 +38,7 @@ const LegalSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-[#ffa800] flex flex-col items-center justify-center text-white text-2xl mx-auto mt-40 overflow-hidden" // 👈 overflow hidden
+      className="sticky top-0 bg-[#ffa800] flex flex-col items-center justify-center text-white text-2xl mx-auto mt-40 overflow-hidden"
       style={{
         width: "40%",
         height: "200px",
@@ -47,7 +47,6 @@ const LegalSection = () => {
     >
       <section className="w-full">
         {" "}
-        {/* 👈 forces Marquee to respect parent width */}
         <div className="px-4 py-10 text-center">
           <h2 className="mb-4 font-agheavy text-4xl md:text-4xl lg:text-5xl font-extrabold text-center mt-10 tracking-tight">
             Anything (but illegal)

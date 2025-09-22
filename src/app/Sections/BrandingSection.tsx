@@ -1,13 +1,36 @@
 "use client";
+import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 
 const BrandingSection: React.FC = () => {
   const cards = Array(6).fill(null);
+       const sectionRef = useRef<HTMLDivElement>(null);
+  
+
+      useEffect(() => {
+    if (sectionRef.current) {
+      gsap.to(
+        sectionRef.current,
+        {
+          width: "100%",
+          height: "100vh",
+          borderRadius: "0px",
+          ease: "power2.inOut",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            scrub: true,
+            pin: true,
+            pinSpacing: false,
+          },
+        }
+      );
+    }
+  }, []);
 
   return (
-    <section className="w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center">
+    <section ref={sectionRef} className="relative z-30 w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight leading-tight">
           Branding <span className="font-aglight">and</span> UI/UX
