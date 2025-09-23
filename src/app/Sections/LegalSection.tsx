@@ -10,14 +10,30 @@ gsap.registerPlugin(ScrollTrigger);
 const LegalSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (sectionRef.current) {
+useEffect(() => {
+  if (!sectionRef.current) return;
+
+  const mm = gsap.matchMedia();
+
+  mm.add(
+    {
+      isDesktop: "(min-width: 1024px)",
+      isMobile: "(max-width: 1023px)",
+    },
+    (context) => {
+      const conditions = context.conditions as { isDesktop: boolean; isMobile: boolean };
+
+      const isDesktop = conditions?.isDesktop ?? false;
+      const isMobile = conditions?.isMobile ?? false;
+
+      gsap.killTweensOf(sectionRef.current);
+
       gsap.fromTo(
         sectionRef.current,
         {
-          width: "70%",
-          height: "200px",
-          borderRadius: "70px",
+          width: isDesktop ? "70%" : "90%",
+          height: isDesktop ? "200px" : "300px",
+          borderRadius: isDesktop ? "70px" : "40px",
         },
         {
           width: "100%",
@@ -32,30 +48,34 @@ const LegalSection = () => {
           },
         }
       );
-
-      const items = sectionRef.current.querySelectorAll(".fade-item");
-      items.forEach((item) => {
-        gsap.fromTo(
-          item,
-          {
-            opacity: 0,
-            y: 50,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: item,
-              start: "top 90%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
-      });
     }
-  }, []);
+  );
+
+  const items = sectionRef.current.querySelectorAll(".fade-item");
+  items.forEach((item) => {
+    gsap.fromTo(
+      item,
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 90%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  });
+
+  return () => mm.revert();
+}, []);
+
 
   return (
     <div
