@@ -50,7 +50,7 @@ const BrandingSection: React.FC = () => {
     <section
     id="brandings"
       ref={sectionRef}
-      className=" w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center"
+      className="min-h-screen w-full bg-[#ffa800] py-8 md:py-10 lg:py-12 md:h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center"
     >
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight leading-tight">

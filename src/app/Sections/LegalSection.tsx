@@ -27,7 +27,7 @@ const LegalSection = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top bottom",
-            end: "bottom center",
+            end: "bottom-=300 center",
             scrub: true,
           },
         }
@@ -38,10 +38,10 @@ const LegalSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="sticky top-0 bg-[#ffa800] flex flex-col items-center justify-center text-white text-2xl mx-auto mt-16 overflow-hidden"
+      className="min-h-screen sticky top-0 bg-[#ffa800] flex flex-col items-center justify-center text-white text-2xl mx-auto overflow-hidden"
       style={{
         width: "40%",
-        height: "200px",
+        height: "100px",
         borderRadius: "30px",
       }}
     >

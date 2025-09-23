@@ -9,6 +9,7 @@ import SocialMediaSection from "./Sections/SocialMediaSection";
 import LegalSection from "./Sections/LegalSection";
 import CTABannerSection from "./Sections/CTABannerSection";
 import TestimonialSection from "./Sections/TestimonialSection";
+import ScrollStackedSection from "./Components/ScrollStackedSection";
 
 export default function Home() {
   return (
@@ -16,9 +17,15 @@ export default function Home() {
       <HeroSection />
       <LetsBuildSection />
       <WhatWeBuildSection />
-      <LegalSection />
-      <WebsiteSection />
-      <BrandingSection />
+      <ScrollStackedSection zIndex={1}>
+        <LegalSection />
+      </ScrollStackedSection>
+      <ScrollStackedSection zIndex={2}>
+        <WebsiteSection />
+      </ScrollStackedSection>
+     <ScrollStackedSection zIndex={3}>
+        <BrandingSection />
+      </ScrollStackedSection>
       <SocialMediaSection />
       <WhyWorkWithUsSection />
       <StepsSection />
