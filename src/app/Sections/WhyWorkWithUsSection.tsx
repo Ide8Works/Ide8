@@ -23,7 +23,7 @@ const content = [
 
 const WhyWorkWithUsSection = () => {
   return (
-    <div className="min-h-screen w-screen flex items-center justify-center flex-col gap-8 sm:gap-10 lg:gap-12 py-8 sm:py-12 lg:py-16">
+    <div className="min-h-screen bg-white w-screen flex items-center justify-center flex-col gap-8 sm:gap-10 lg:gap-12 py-8 sm:py-12 lg:py-16">
       <div className="flex flex-col items-center gap-2 sm:gap-3 px-4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-aglight text-center tracking-tight leading-tight">
           why work <span className="font-agheavy text-[#ffa800]">with us</span>
