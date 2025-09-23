@@ -1,4 +1,11 @@
 const LetsBuildSection = () => {
+  const images = [
+    "/media/service3.png",
+    "/media/service2.png",
+    "/media/service4.png",
+    "/media/service1.png",
+  ];
+
   return (
     <section className="w-screen flex lg:flex-row flex-col items-center justify-center px-10 sm:px-20 lg:px-36 py-28 gap-10">
       <div className="flex flex-col items-center justify-center text-center lg:text-right gap-3 w-full lg:w-1/2">
@@ -13,11 +20,19 @@ const LetsBuildSection = () => {
           <span className="italic">right place</span>.
         </h2>
       </div>
-      <div className="grid grid-cols-2 w-full lg:w-1/2 gap-3">
-        <div className="bg-[#ffa800] rounded-lg border-2 border-black p-16 sm:p-20"></div>
-        <div className="bg-white rounded-lg border-2 border-black p-16 sm:p-20"></div>
-        <div className="bg-white rounded-lg border-2 border-black p-16 sm:p-20"></div>
-        <div className="bg-[#ffa800] rounded-lg border-2 border-black p-16 sm:p-20"></div>
+      <div className="grid grid-cols-2 w-full lg:w-1/2 gap-3 pointer-events-none">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`rounded-lg bg-[#ffa800] py-10  md:py-12 flex items-center justify-center`}
+          >
+            <img
+              src={img}
+              alt={`Service image`}
+              className="object-cover w-3/4 h-3/4 scale-x-125 scale-y-200"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
