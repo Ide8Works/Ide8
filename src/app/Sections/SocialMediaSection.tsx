@@ -1,15 +1,57 @@
 "use client";
-import React from "react";
+import gsap from "gsap/all";
+import React, { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 
 
 const SocialMediaSection: React.FC = () => {
+
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const titleRef = useRef<HTMLDivElement>(null);
+    const scrollRef = useRef<HTMLDivElement>(null);
+  
+
+    useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(titleRef.current, {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 50%",
+        },
+      });
+
+      return () => ctx.revert();
+    }, []);
+  }, []);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(scrollRef.current, {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 50%",
+        },
+      });
+
+      return () => ctx.revert();
+    }, []);
+  }, []);
+
   return (
     <section
+    ref={sectionRef}
       id="socialmedia"
       className="min-h-screen relative z-40 w-full bg-white py-8 md:py-10 lg:py-12 max-w-7xl mx-auto"
     >
-      <div className="px-4 py-10 text-center">
+      <div className="px-4 py-10 text-center" ref={titleRef}>
         <h2 className="mb-4 font-agheavy text-4xl md:text-4xl lg:text-5xl font-extrabold text-center tracking-tight">
           Social Media
         </h2>
@@ -19,6 +61,8 @@ const SocialMediaSection: React.FC = () => {
           and keep your brand top-of-mind.
         </p>
       </div>
+
+      <div className="w-full" ref={scrollRef}>
 
       <Marquee pauseOnHover speed={70} gradient={false} className="px-6 pb-12">
         <div className="rounded-xl w-72 h-[32rem] flex flex-col gap-1 overflow-hidden mx-3">
@@ -159,6 +203,7 @@ const SocialMediaSection: React.FC = () => {
           ></video>
         </div>
       </Marquee>
+      </div>
     </section>
   );
 };

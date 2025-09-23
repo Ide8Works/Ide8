@@ -32,6 +32,28 @@ const LegalSection = () => {
           },
         }
       );
+
+      const items = sectionRef.current.querySelectorAll(".fade-item");
+      items.forEach((item) => {
+        gsap.fromTo(
+          item,
+          {
+            opacity: 0,
+            y: 50,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: item,
+              start: "top 90%", 
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      });
     }
   }, []);
 
@@ -46,8 +68,7 @@ const LegalSection = () => {
       }}
     >
       <section className="w-full">
-        {" "}
-        <div className="px-4 py-10 text-center">
+        <div className="px-4 py-10 text-center fade-item">
           <h2 className="mb-4 font-agheavy text-4xl md:text-4xl lg:text-5xl font-extrabold text-center mt-10 tracking-tight">
             Anything (but illegal)
           </h2>
@@ -58,6 +79,7 @@ const LegalSection = () => {
             happen.
           </p>
         </div>
+        <div className="fade-item">
         <Marquee
           pauseOnHover
           speed={50}
@@ -81,7 +103,7 @@ const LegalSection = () => {
             </div>
           </div>
 
-          <div className="bg-[#f28e35]/65 rounded-xl aspect-[9/16] w-72 flex items-center justify-center text-gray-500 font-bold text-2xl mx-3">
+          <div className=" bg-[#f28e35]/65 rounded-xl aspect-[9/16] w-72 flex items-center justify-center text-gray-500 font-bold text-2xl mx-3">
             <video
               autoPlay
               loop
@@ -202,6 +224,7 @@ const LegalSection = () => {
             ></video>
           </div>
         </Marquee>
+        </div>
       </section>
     </div>
   );
