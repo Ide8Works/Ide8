@@ -24,7 +24,6 @@ useEffect(() => {
       const conditions = context.conditions as { isDesktop: boolean; isMobile: boolean };
 
       const isDesktop = conditions?.isDesktop ?? false;
-      const isMobile = conditions?.isMobile ?? false;
 
       gsap.killTweensOf(sectionRef.current);
 
