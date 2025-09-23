@@ -2,7 +2,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-const bigVideos = [];
 
 const SocialMediaSection: React.FC = () => {
   return (
