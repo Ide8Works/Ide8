@@ -50,7 +50,7 @@ const StepsCard = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div className="sticky top-16 flex items-center justify-center w-full max-w-6xl px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="sticky top-32 flex items-center justify-center w-full max-w-6xl px-4 sm:px-6 lg:px-8 mx-auto">
       <motion.div
         style={{
           scale,
@@ -94,7 +94,7 @@ const StepsSection: React.FC = () => {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start start", "end end"],
+    offset: ["start end", "end center"],
   });
 
   return (
@@ -102,7 +102,7 @@ const StepsSection: React.FC = () => {
       ref={container}
       className="relative flex w-full flex-col items-center justify-center mb-[15vh] mt-[5vh md:mb-[15vh] 2xl:mb-[4vh] py-8 md:py-12 2xl:max-w-7xl 2xl:mx-auto"
     >
-      <h2 className="sticky text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight tracking-tight leading-tight">
+      <h2 className="sticky top-10 text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-8 sm:mb-12 font-aglight tracking-tight leading-tight">
         All it takes are{" "}
         <span className="font-agheavy">
           {" "}

@@ -126,7 +126,7 @@ const WebsiteSection: React.FC = () => {
       <div className="w-full" ref={scrollRef}>
         <Marquee
           pauseOnHover={true}
-          speed={120}
+          speed={100}
           gradient={false}
           className=" mt-7 md:mt-0 py-4 2xl:max-w-7xl 2xl:mx-auto"
         >
@@ -141,7 +141,7 @@ const WebsiteSection: React.FC = () => {
                 className="w-full h-full object-cover rounded-xl"
               />
 
-              <div className="absolute flex items-center justify-between mx-5 px-6 py-2 border-1 border-white/55 bg-black/8 backdrop-blur-xl rounded-full bottom-4 left-0 right-0 md:translate-y-30 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-400 ease-out">
+              <div className="absolute flex items-center justify-between mx-5 px-6 py-2 border border-white/55 bg-black/8 backdrop-blur-xl rounded-full bottom-4 left-0 right-0 transition-all duration-400 ease-out">
                 <div className="text-white text-left">
                   <h3 className="text-sm md:text-lg font-semibold font-agheavy">
                     {item?.name}

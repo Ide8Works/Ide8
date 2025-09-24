@@ -27,24 +27,23 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaInstagram className="w-5 h-5" />,
-      href: "https://instagram.com/yourprofile",
+      href: "",
     },
     {
       icon: <FaLinkedin className="w-5 h-5" />,
-      href: "https://linkedin.com/in/yourprofile",
+      href: "",
     },
     {
       icon: <FaWhatsapp className="w-5 h-5" />,
-      href: "https://wa.me/yournumber",
+      href: "https://wa.me/9262734111",
     },
-    { icon: <FaPhone className="w-5 h-5" />, href: "tel:+1234567890" },
+    { icon: <FaPhone className="w-5 h-5" />, href: "tel:7428247674" },
   ];
 
   return (
-    <footer className="bg-[#ffa800] text-white px-4 pt-4 sm:pt-0 sm:px-20">
+    <footer className="bg-[#ffa800] text-white pt-4 sm:pt-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Left Section - Logo, Subheading & Social Icons */}
           <div className="md:col-span-1">
             <img
               src="/media/logo2.png"
@@ -55,7 +54,6 @@ const Footer = () => {
               Got an Idea? Let&lsquo;s Build it Together!
             </p>
 
-            {/* Social Media Icons */}
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -80,9 +78,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right Section - Quick Links */}
           <div className="md:col-span-2">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 md:mt-4">
               {quickLinks.map((link) => (
                 <button
                   key={link.name}
@@ -93,11 +90,12 @@ const Footer = () => {
                 </button>
               ))}
             </div>
+
             <div className="mt-12 pt-2 text-white font-courier">
               <p>
                 Made with ❤️ by{" "}
                 <a
-                  href="https://github.com/aman"
+                  href="https://github.com/Amanrajguptaa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
@@ -108,7 +106,7 @@ const Footer = () => {
                 </a>{" "}
                 and{" "}
                 <a
-                  href="https://github.com/nishchay"
+                  href="https://github.com/NishB369"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
