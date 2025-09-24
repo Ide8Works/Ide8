@@ -10,6 +10,7 @@ import LegalSection from "./Sections/LegalSection";
 import CTABannerSection from "./Sections/CTABannerSection";
 import TestimonialSection from "./Sections/TestimonialSection";
 import ScrollStackedSection from "./Components/ScrollStackedSection";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <StepsSection />
       <TestimonialSection />
       <CTABannerSection />
+      <Footer/>
     </>
   );
 }
