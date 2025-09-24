@@ -6,49 +6,49 @@ import { cn } from "@/lib/utils";
 
 const reviews = [
   {
-    name: "Jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Arjun Mehta",
+    body: "The website they built for my startup is lightning-fast and stunning. Best web development team I've worked with!",
+    img: "https://avatar.vercel.sh/arjun",
   },
   {
-    name: "Jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    name: "Priya Sharma",
+    body: "Their social media creatives tripled our engagement! Every post feels fresh, on-brand, and perfectly tailored to our audience.",
+    img: "https://avatar.vercel.sh/priya",
   },
   {
-    name: "John",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    name: "Rahul Verma",
+    body: "Our new brand identity completely transformed how customers perceive us. The fonts, colors, and messaging are flawless!",
+    img: "https://avatar.vercel.sh/rahul",
   },
   {
-    name: "Jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Ananya Patel",
+    body: "From concept to launch, their web development process was seamless. Our e-commerce site now converts better!",
+    img: "https://avatar.vercel.sh/ananya",
   },
   {
-    name: "Jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    name: "Vikram Singh",
+    body: "The Instagram reels and carousels they designed went viral! Social media creatives that actually drive sales.",
+    img: "https://avatar.vercel.sh/vikram",
   },
   {
-    name: "John",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    name: "Divya Iyer",
+    body: "They captured our company's essence perfectly in the rebrand. Professional, modern, and uniquely us!",
+    img: "https://avatar.vercel.sh/divya",
   },
   {
-    name: "Jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Karan Malhotra",
+    body: "Responsive, clean, and SEO-optimized – our new website exceeded all expectations. Web dev done right!",
+    img: "https://avatar.vercel.sh/karan",
   },
   {
-    name: "Jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    name: "Meera Reddy",
+    body: "Their social media strategy + creatives helped us grow better in 3 months. Game-changer!",
+    img: "https://avatar.vercel.sh/meera",
   },
   {
-    name: "John",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    name: "Aditya Joshi",
+    body: "The branding package included everything – logo, style guide, business cards. Cohesive and premium quality!",
+    img: "https://avatar.vercel.sh/aditya",
   },
 ];
 
@@ -56,12 +56,10 @@ const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
-  img,
   name,
   body,
   isAlternate,
 }: {
-  img: string;
   name: string;
   body: string;
   isAlternate?: boolean;
@@ -76,22 +74,23 @@ const ReviewCard = ({
       )}
     >
       <div className="flex items-center gap-3">
-        <img
-          className={`rounded-full ${isAlternate ? "border-white" : ""}`}
-          width={40}
-          height={40}
-          alt={name}
-          src={img}
-        />
+        <div className="w-10 h-10 bg-black/75 flex items-center justify-center text-white font-courier rounded-full">{name.charAt(0)}</div>
         <div className="flex flex-col">
           <figcaption className="text-sm font-semibold">{name}</figcaption>
-          
         </div>
       </div>
-      <blockquote className={`mt-4 text-xs sm:text-base italic ${isAlternate ? "text-white" : "text-black"}`}>
+      <blockquote
+        className={`mt-4 text-xs sm:text-base italic ${
+          isAlternate ? "text-white" : "text-black"
+        }`}
+      >
         “{body}”
       </blockquote>
-      <div className={`absolute bottom-4 right-4 text-xl ${isAlternate ? "text-white/70" : "text-[#ffa800]"}`}>
+      <div
+        className={`absolute bottom-4 right-4 text-xl ${
+          isAlternate ? "text-white/70" : "text-[#ffa800]"
+        }`}
+      >
         ❝
       </div>
     </figure>
@@ -101,15 +100,15 @@ const ReviewCard = ({
 const TestimonialSection = () => {
   return (
     <section className="flex lg:flex-row flex-col items-center justify-center py-12 max-w-6xl mx-auto h-screen px-4 md:px-0">
-      <div className="flex flex-col items-center justify-center text-center lg:text-right gap-3 w-full lg:w-1/2">
-        <h2 className="font-courier tracking-tight text-sm sm:text-2xl">
+      <div className="flex flex-col items-center justify-center lg:text-right gap-3 w-full lg:w-1/2 text-right">
+        <h2 className="font-courier tracking-tight text-sm sm:text-lg w-full">
           Brand Is Not What You Say
         </h2>
-        <h1 className="font-aglight text-3xl md:text-5xl lg:text-6xl tracking-tight">
+        <h1 className="font-aglight text-3xl md:text-5xl lg:text-6xl tracking-tight w-full">
           It is What <br className="hidden md:block" />
           <span className="font-agheavy text-[#ffa800]">They</span> Say
         </h1>
-        <h2 className="font-courier tracking-tight text-sm sm:text-lg mb-8 md:mb-0">
+        <h2 className="font-courier tracking-tight text-sm sm:text-lg mb-8 md:mb-0 w-full">
           and they say, <em>what they see!</em>
         </h2>
       </div>
@@ -131,6 +130,5 @@ const TestimonialSection = () => {
     </section>
   );
 };
-
 
 export default TestimonialSection;
