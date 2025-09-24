@@ -88,7 +88,7 @@ useEffect(() => {
     >
       <section className="w-full">
         <div className="px-4 py-10 text-center fade-item">
-          <h2 className="mb-4 font-agheavy text-4xl md:text-4xl lg:text-5xl font-extrabold text-center mt-10 tracking-tight">
+          <h2 className="mb-4 font-agheavy text-4xl md:text-4xl lg:text-5xl font-extrabold text-center mt-16 tracking-tight">
             Anything (but illegal)
           </h2>
           <p className="text-sm text-white max-w-xl mx-auto font-courier tracking-tight leading-tight">

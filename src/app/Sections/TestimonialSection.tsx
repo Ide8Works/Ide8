@@ -67,7 +67,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "border relative h-full w-32 sm:w-64 md:w-80 cursor-pointer overflow-hidden rounded-2xl p-3 md:p-6 flex-shrink-0",
+        "border relative h-full w-38 sm:w-64 md:w-80 cursor-pointer overflow-hidden rounded-2xl p-3 md:p-6 flex-shrink-0",
         isAlternate
           ? "bg-[#ffa800] border-[#ffa800] text-white"
           : "bg-white border-black text-black"
@@ -114,12 +114,12 @@ const TestimonialSection = () => {
       </div>
 
       <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden">
-        <Marquee pauseOnHover vertical className="[duration:5s] gap-6">
+        <Marquee pauseOnHover vertical className="[duration:2s] gap-6">
           {firstRow.map((review, index) => (
             <ReviewCard key={index} {...review} isAlternate={index % 2 === 0} />
           ))}
         </Marquee>
-        <Marquee reverse pauseOnHover vertical className="[duration:5s] gap-6">
+        <Marquee reverse pauseOnHover vertical className="[duration:2s] gap-6">
           {secondRow.map((review, index) => (
             <ReviewCard key={index} {...review} isAlternate={index % 2 === 0} />
           ))}

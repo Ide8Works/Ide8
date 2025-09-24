@@ -12,7 +12,7 @@ const XFactors = () => {
         <img
           src="/media/xFactors.png"
           alt="X Factors"
-          className="w-full max-w-[1000px] h-auto object-contain"
+          className="w-full scale-y-110 md:scale-y-100 max-w-[1000px] h-auto object-contain"
         />
       </div>
     </section>

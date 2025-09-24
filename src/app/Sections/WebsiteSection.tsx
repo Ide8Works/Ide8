@@ -108,7 +108,7 @@ const WebsiteSection: React.FC = () => {
     <section
       id="websites"
       ref={sectionRef}
-      className="min-h-screen w-full bg-white py-8 md:py-10 lg:py-12 h-screen 2xl:h-auto flex flex-col items-center justify-center"
+      className="min-h-screen w-full bg-white py-8 md:py-10 lg:py-12 h-screen 2xl:h-auto flex flex-col items-center justify-start md:justify-center"
     >
       <div ref={titleRef} className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 font-agheavy font-bold tracking-tight">
@@ -128,7 +128,7 @@ const WebsiteSection: React.FC = () => {
           pauseOnHover={true}
           speed={100}
           gradient={false}
-          className=" mt-7 md:mt-0 py-4 2xl:max-w-7xl 2xl:mx-auto"
+          className=" py-4 2xl:max-w-7xl 2xl:mx-auto"
         >
           {websites.map((item, index) => (
             <div
