@@ -52,7 +52,7 @@ const Footer = () => {
               className="h-20 md:h-40 -mt-14"
             />
             <p className="text-white max-w-xs mb-6">
-              Got an Idea? Let's Build it Together!
+              Got an Idea? Let&lsquo;s Build it Together!
             </p>
 
             {/* Social Media Icons */}
@@ -102,7 +102,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  <span className="font-black hover:text-black duration-300 transition-colors ease-in-out">Aman</span>
+                  <span className="font-black hover:text-black duration-300 transition-colors ease-in-out">
+                    Aman
+                  </span>
                 </a>{" "}
                 and{" "}
                 <a
@@ -111,7 +113,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-<span className="font-black hover:text-black duration-300 transition-colors ease-in-out">Nishchay</span>
+                  <span className="font-black hover:text-black duration-300 transition-colors ease-in-out">
+                    Nishchay
+                  </span>
                 </a>
               </p>
             </div>
