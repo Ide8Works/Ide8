@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Skiper39 } from "@/components/ui/skiper-ui/skiper39";
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
