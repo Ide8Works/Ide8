@@ -1,12 +1,19 @@
 const WhatWeBuildSection = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-8 py-8 px-4 md:py-12 md:px-0 bg-white h-screen">
+    <section
+      id="what-we-build"
+      className="w-full flex flex-col items-center justify-center gap-8 py-8 px-4 md:py-12 md:px-0 bg-white h-screen"
+    >
       <div className="flex flex-col items-center text-center gap-3">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-aglight tracking-tight leading-tight">
-          what all we <span className="text-5xl lg:text-6xl font-agheavy text-[#ffa800]">build</span>
+          what all we{" "}
+          <span className="text-5xl lg:text-6xl font-agheavy text-[#ffa800]">
+            build
+          </span>
         </h1>
         <h2 className="text-sm sm:text-base md:text-lg font-courier tracking-tight leading-tight">
-          <span className="italic">these are just us,</span> working hard <br className="hidden md:block" /> to get your work done
+          <span className="italic">these are just us,</span> working hard{" "}
+          <br className="hidden md:block" /> to get your work done
         </h2>
       </div>
 
