@@ -1,9 +1,9 @@
 const LetsBuildSection = () => {
   const images = [
-    "/media/service3.png",
-    "/media/service2.png",
-    "/media/service4.png",
-    "/media/service1.png",
+    "/media/Grid1.png",
+    "/media/Grid2.png",
+    "/media/Grid3.png",
+    "/media/Grid4.png",
   ];
 
   return (
@@ -24,13 +24,11 @@ const LetsBuildSection = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className={`rounded-lg bg-[#ffa800] py-10  md:py-12 flex items-center justify-center`}
+            className={`rounded-lg ${
+              index == 2 || index == 1 ? "bg-[#ffa800]" : "bg-white"
+            } py-10 md:py-8 flex items-center justify-center border-2`}
           >
-            <img
-              src={img}
-              alt={`Service image`}
-              className="object-cover w-3/4 h-3/4 scale-x-125 scale-y-200"
-            />
+            <img src={img} alt={`Service image`} className="w-24" />
           </div>
         ))}
       </div>
