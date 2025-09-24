@@ -25,7 +25,7 @@ const WhyWorkWithUsSection = () => {
   return (
     <div className="min-h-screen bg-white w-screen flex items-center justify-center flex-col gap-8 sm:gap-10 lg:gap-12 py-8 sm:py-12 lg:py-16">
       <div className="flex flex-col items-center gap-2 sm:gap-3 px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-aglight text-center tracking-tight leading-tight">
+        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-aglight text-center tracking-tight leading-tight">
           why work <span className="font-agheavy text-[#ffa800]">with us</span>
         </h1>
         <h2 className="font-courier text-sm sm:text-base md:text-lg text-center leading-tight w-full sm:w-5/6 md:w-4/5 lg:w-2/3 px-4 tracking-tight">

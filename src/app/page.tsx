@@ -11,6 +11,7 @@ import CTABannerSection from "./Sections/CTABannerSection";
 import TestimonialSection from "./Sections/TestimonialSection";
 import ScrollStackedSection from "./Components/ScrollStackedSection";
 import Footer from "./Components/Footer";
+import XFactors from "./Sections/XFactors";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </ScrollStackedSection>
       <SocialMediaSection />
       <WhyWorkWithUsSection />
+      <XFactors/>
       <StepsSection />
       <TestimonialSection />
       <CTABannerSection />
