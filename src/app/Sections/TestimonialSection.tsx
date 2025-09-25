@@ -74,7 +74,9 @@ const ReviewCard = ({
       )}
     >
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-black/75 flex items-center justify-center text-white font-courier rounded-full">{name.charAt(0)}</div>
+        <div className="w-10 h-10 bg-black/75 flex items-center justify-center text-white font-courier rounded-full">
+          {name.charAt(0)}
+        </div>
         <div className="flex flex-col">
           <figcaption className="text-sm font-semibold">{name}</figcaption>
         </div>
@@ -100,7 +102,7 @@ const ReviewCard = ({
 const TestimonialSection = () => {
   return (
     <section className="flex lg:flex-row flex-col items-center justify-center py-12 max-w-6xl mx-auto h-screen px-4 md:px-0">
-      <div className="flex flex-col items-center justify-center lg:text-right gap-3 w-full lg:w-1/2 text-right">
+      <div className="flex flex-col items-center justify-center text-center lg:text-right sm:gap-3 w-full lg:w-1/2">
         <h2 className="font-courier tracking-tight text-sm sm:text-lg w-full">
           Brand Is Not What You Say
         </h2>
@@ -108,7 +110,7 @@ const TestimonialSection = () => {
           It is What <br className="hidden md:block" />
           <span className="font-agheavy text-[#ffa800]">They</span> Say
         </h1>
-        <h2 className="font-courier tracking-tight text-sm sm:text-lg mb-8 md:mb-0 w-full">
+        <h2 className="font-courier tracking-tight text-sm sm:text-lg -mt-1 sm:mt-0 mb-8 md:mb-0 w-full">
           and they say, <em>what they see!</em>
         </h2>
       </div>
